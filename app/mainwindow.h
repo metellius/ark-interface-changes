@@ -36,6 +36,7 @@ class MainWindow: public KParts::MainWindow
 
 	public slots:
 		void openUrl( const KUrl& url );
+		void setShowExtractDialog(bool);
 
 	private slots:
 		void updateActions();
@@ -53,6 +54,7 @@ class MainWindow: public KParts::MainWindow
 		KRecentFilesAction    *m_recentFilesAction;
 		QAction               *m_openAction;
 		QAction               *m_newAction;
+		KParts::OpenUrlArguments m_openArgs;
 };
 
 #endif // MAINWINDOW_H
