@@ -116,7 +116,7 @@ int main( int argc, char **argv )
 				batchExtractDialog->setShowExtractDialog(true);
 			}
 
-			batchExtractDialog->show();
+			//batchExtractDialog->show();
 			batchExtractDialog->startNextJob();
 
 		}
